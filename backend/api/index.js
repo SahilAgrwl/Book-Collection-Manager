@@ -1,15 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const booksRouter = require('./routes/books');
+const booksRouter = require('../routes/books');
 
 const app = express();
 const PORT = 5000;
 
 app.use(cors());
-app.use(cors({
-  origin: 'https://book-collection-manager-client.vercel.app/.com'
-}));
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://sahilagrawal4556:o5o2FlprgVcPRkhL@cluster0.xygocbf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
