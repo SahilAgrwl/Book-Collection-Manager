@@ -1,0 +1,20 @@
+/* BookActions.css */
+.edit-button, .delete-button {
+    background: none;
+    border: none;
+    color: #fbff00;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .edit-button:hover, .delete-button:hover {
+    color: #ff1010;
+  }
+  
+  .edit-button i, .delete-button i {
+    margin-right: 5px;
+  }
+  
